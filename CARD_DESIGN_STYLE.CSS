@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&display=swap');
+
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Josefin Sans' , sans-serif;
+}
+
+.CONTAINER
+{
+    min-height: 100vh;
+    width: 100%;
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.CARD
+{
+    width: 500px;
+    height: 300px;
+    color: #FFF;
+    cursor: pointer;
+    perspective: 1000px;
+
+}
+
+.CARD-INNER
+{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+}
+
+.FRONT-VIEW, .BACK-VIEW
+{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(45deg, #0045C7, #FF2C7D);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 20px 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 1;
+    backface-visibility: hidden;
+}
+
+.ROW
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.MAP-IMAGE
+{
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.3;
+    z-index: -1;
+}
+
+.CARD-NO
+{
+    font-size: 35px;
+    margin-top: 40px
+}
+
+.CARD-HOLDER
+{
+    margin-top: 30px;
+    font-size: 13px;
+}
+
+.CARD-HOLDER-NAME
+{
+    font-size: 23px;
+    margin-top: 20px;
+}
+
+.BAR
+{
+    background: #222;
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 60px;
+    margin-top: 10px;
+}
+
+.CARD-CVV
+{
+    margin-top: 10px;
+}
+
+.CARD-CVV div
+{
+    flex: 1;
+}
+
+.CARD-CVV img
+{
+    width: 100%;
+    display: block;
+    line-height: 0;
+}
+
+.CARD-CVV p
+{
+    background: #FFF;
+    color: #000;
+    font-size: 20px;
+    padding: 10px 15px;
+}
+
+.BACK-VIEW
+{
+    transform: rotateY(180deg);
+}
+
+.CARD:hover .CARD-INNER
+{
+    transform: rotateY(-180deg);
+}
+
+.CUSTOMER-CARE
+{
+    font-size: 10px;
+}
+
+.SIGNATURE-TRANSFEERABLE
+{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.CUSTOMER-SIGNATURE
+{
+    font-size: 10px;
+    margin-top: 10px;
+}
+
+.CARD-MORE
+{
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+.CARD-MORE i
+{
+    background: #FFF;
+    border-radius: 3px;
+    padding: 5px;
+}
